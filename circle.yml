@@ -1,0 +1,7 @@
+## Customize deployment commands
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: young-dusk-2049
+
