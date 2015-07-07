@@ -1,3 +1,9 @@
+## General
+general:
+  branches:
+    only:
+      - master ## only build master branch
+
 ## Customize database commands
 database:
   override:
