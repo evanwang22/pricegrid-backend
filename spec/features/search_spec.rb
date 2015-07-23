@@ -18,21 +18,22 @@ feature 'Searching for a product' do
   end
 
   def user_sees_application
-    expect(page).to have_text("Pricegrid")
-    expect(page).to have_text("See color and size combinations for Amazon products")
+    expect(page).to have_text('Pricegrid')
+    expect(page).to have_text('See color and size combinations for Amazon products')
   end
 
   def user_sees_search_field
-    expect(page).to have_selector("input #search")
+    expect(page).to have_selector('input#search')
   end
 
   def user_searches_with_a_product_id
     fill_in 'search', with: 'B00PZB5LBM'
+    click_on 'Search'
   end
 
   def user_sees_details_for_the_product
-    expect(page).to have_text("China Gold Panda")
-    expect(page).to have_selector("
+    expect(page).to have_text('China Gold Panda')
+    expect(page).to have_selector('img.search-result')
   end
 end
 

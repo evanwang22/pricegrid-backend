@@ -6,3 +6,8 @@
   <%= submit_tag "Search" %>
 <% end %>
 
+<br>
+
+Results for <%= @search_result[:name] %>
+
+<img class='search-result' src=<%= @search_result[:image_url] %> alt="Amazon image"/>
