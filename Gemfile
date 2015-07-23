@@ -39,6 +39,8 @@ group :development, :test do
   gem 'pry-rails'
   # Feature test driver
   gem 'capybara'
+  # Environment variable management
+  gem 'dotenv-rails'
   # Mocks
   gem 'factory_girl_rails' 
   # Simple BDD formulas
