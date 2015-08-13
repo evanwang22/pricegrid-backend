@@ -1,0 +1,12 @@
+<h1>Pricegrid</h1>
+<p>See color and size combinations for Amazon products</p>
+
+<%= form_tag '/search', :method => 'get' do %>
+  <%= text_field_tag :search %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<p class="error">Sorry, the product ID you searched for cannot be found. Please try your search again</p>
+
+<br>
+

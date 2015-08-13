@@ -13,6 +13,13 @@ feature 'Searching for a product' do
     Then 'user sees details for the product'
   end
 
+  scenario "User searches for a product which doesn't exist" do
+    When 'user visits homepage'
+    Then 'user sees search field'
+    When 'user searches with an invalid product id'
+    Then 'user sees an error message'
+  end
+
   def user_visits_homepage
     visit root_path
   end
@@ -34,6 +41,15 @@ feature 'Searching for a product' do
   def user_sees_details_for_the_product
     expect(page).to have_text('China Gold Panda')
     expect(page).to have_selector('img.search-result')
+  end
+
+  def user_searches_with_an_invalid_product_id
+    fill_in 'search', with: 'K00PZB5LBM'
+    click_on 'Search'
+  end
+
+  def user_sees_an_error_message
+    expect(page).to have_text('Sorry, the product ID you searched for cannot be found. Please try your search again')
   end
 end
 
