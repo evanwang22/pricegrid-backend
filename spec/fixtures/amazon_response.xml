@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01">
+  <OperationRequest>
+    <HTTPHeaders>
+      <Header Name="UserAgent" Value="Jeff/1.5.0 (Language=Ruby; fsenev)" />
+    </HTTPHeaders>
+    <RequestId>f06bdbf4-e038-46f4-bcd1-3e3c35a42209</RequestId>
+    <Arguments>
+      <Argument Name="AWSAccessKeyId" Value="AKIAI25XAZBK65FGHABA" />
+      <Argument Name="AssociateTag" Value="tag" />
+      <Argument Name="ItemId" Value="B00MVODHIK" />
+      <Argument Name="Operation" Value="ItemLookup" />
+      <Argument Name="ResponseGroup" Value="ItemAttributes,Images" />
+      <Argument Name="Service" Value="AWSECommerceService" />
+      <Argument Name="SignatureMethod" Value="HmacSHA256" />
+      <Argument Name="SignatureVersion" Value="2" />
+      <Argument Name="Timestamp" Value="2015-10-28T01:53:27Z" />
+      <Argument Name="Version" Value="2013-08-01" />
+      <Argument Name="Signature" Value="pQWf4LPBbUWaL12EJ246ueA1bo4dJQZmIIAzj1VOtvI=" />
+    </Arguments>
+    <RequestProcessingTime>0.0290670000000000</RequestProcessingTime>
+  </OperationRequest>
+  <Items>
+    <Request>
+      <IsValid>True</IsValid>
+      <ItemLookupRequest>
+        <IdType>ASIN</IdType>
+        <ItemId>B00MVODHIK</ItemId>
+        <ResponseGroup>ItemAttributes</ResponseGroup>
+        <ResponseGroup>Images</ResponseGroup>
+        <VariationPage>All</VariationPage>
+      </ItemLookupRequest>
+    </Request>
+    <Item>
+      <ASIN>B00MVODHIK</ASIN>
+      <ParentASIN>B00N8J1PQI</ParentASIN>
+      <DetailPageURL>http://www.amazon.com/Contigo-Cortland-Bottle-24-Ounce-Radiant/dp/B00MVODHIK%3Fpsc%3D1%26SubscriptionId%3DAKIAI25XAZBK65FGHABA%26tag%3Dtag%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00MVODHIK</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Contigo-Cortland-Bottle-24-Ounce-Radiant/dp/tech-data/B00MVODHIK%3FSubscriptionId%3DAKIAI25XAZBK65FGHABA%26tag%3Dtag%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00MVODHIK</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB00MVODHIK%26SubscriptionId%3DAKIAI25XAZBK65FGHABA%26tag%3Dtag%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00MVODHIK</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB00MVODHIK%26SubscriptionId%3DAKIAI25XAZBK65FGHABA%26tag%3Dtag%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00MVODHIK</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB00MVODHIK%26SubscriptionId%3DAKIAI25XAZBK65FGHABA%26tag%3Dtag%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00MVODHIK</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B00MVODHIK%3FSubscriptionId%3DAKIAI25XAZBK65FGHABA%26tag%3Dtag%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00MVODHIK</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B00MVODHIK%3FSubscriptionId%3DAKIAI25XAZBK65FGHABA%26tag%3Dtag%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00MVODHIK</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B00MVODHIK%3FSubscriptionId%3DAKIAI25XAZBK65FGHABA%26tag%3Dtag%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00MVODHIK</URL>
+        </ItemLink>
+      </ItemLinks>
+      <SmallImage>
+        <URL>http://ecx.images-amazon.com/images/I/31otfvpPU6L._SL75_.jpg</URL>
+        <Height Units="pixels">75</Height>
+        <Width Units="pixels">55</Width>
+      </SmallImage>
+      <MediumImage>
+        <URL>http://ecx.images-amazon.com/images/I/31otfvpPU6L._SL160_.jpg</URL>
+        <Height Units="pixels">160</Height>
+        <Width Units="pixels">118</Width>
+      </MediumImage>
+      <LargeImage>
+        <URL>http://ecx.images-amazon.com/images/I/31otfvpPU6L.jpg</URL>
+        <Height Units="pixels">500</Height>
+        <Width Units="pixels">368</Width>
+      </LargeImage>
+      <ImageSets>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/31vDznO4L%2BL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">22</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/31vDznO4L%2BL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">55</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/31vDznO4L%2BL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">55</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/31vDznO4L%2BL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">81</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/31vDznO4L%2BL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">118</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/31vDznO4L%2BL.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">368</Width>
+          </LargeImage>
+          <HiResImage>
+            <URL>http://ecx.images-amazon.com/images/I/61yVtfDJW8L.jpg</URL>
+            <Height Units="pixels">1572</Height>
+            <Width Units="pixels">1158</Width>
+          </HiResImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/31b14dA1ftL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">22</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/31b14dA1ftL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">55</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/31b14dA1ftL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">55</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/31b14dA1ftL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">81</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/31b14dA1ftL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">118</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/31b14dA1ftL.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">368</Width>
+          </LargeImage>
+          <HiResImage>
+            <URL>http://ecx.images-amazon.com/images/I/61Df2eeeLLL.jpg</URL>
+            <Height Units="pixels">1572</Height>
+            <Width Units="pixels">1158</Width>
+          </HiResImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/313WBehJvsL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">22</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/313WBehJvsL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">55</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/313WBehJvsL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">55</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/313WBehJvsL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">81</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/313WBehJvsL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">118</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/313WBehJvsL.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">368</Width>
+          </LargeImage>
+          <HiResImage>
+            <URL>http://ecx.images-amazon.com/images/I/61WKUqk1qdL.jpg</URL>
+            <Height Units="pixels">1572</Height>
+            <Width Units="pixels">1158</Width>
+          </HiResImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/315Ig5O4MCL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">22</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/315Ig5O4MCL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">55</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/315Ig5O4MCL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">55</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/315Ig5O4MCL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">81</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/315Ig5O4MCL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">118</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/315Ig5O4MCL.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">368</Width>
+          </LargeImage>
+          <HiResImage>
+            <URL>http://ecx.images-amazon.com/images/I/614KlIMWcBL.jpg</URL>
+            <Height Units="pixels">1572</Height>
+            <Width Units="pixels">1158</Width>
+          </HiResImage>
+        </ImageSet>
+        <ImageSet Category="primary">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/31otfvpPU6L._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">22</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/31otfvpPU6L._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">55</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/31otfvpPU6L._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">55</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/31otfvpPU6L._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">81</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/31otfvpPU6L._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">118</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/31otfvpPU6L.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">368</Width>
+          </LargeImage>
+          <HiResImage>
+            <URL>http://ecx.images-amazon.com/images/I/61kP62S2jmL.jpg</URL>
+            <Height Units="pixels">1572</Height>
+            <Width Units="pixels">1158</Width>
+          </HiResImage>
+        </ImageSet>
+      </ImageSets>
+      <ItemAttributes>
+        <Binding>Kitchen</Binding>
+        <Brand>Contigo</Brand>
+        <CatalogNumberList>
+          <CatalogNumberListElement>70615</CatalogNumberListElement>
+        </CatalogNumberList>
+        <Color>Radiant Orchid</Color>
+        <EAN>0840276106170</EAN>
+        <EANList>
+          <EANListElement>0840276106170</EANListElement>
+          <EANListElement>0798527141008</EANListElement>
+        </EANList>
+        <Feature>100% BPA free</Feature>
+        <Feature>Patented AUTOSEAL lid is 100% leak-proof and 100% spill-proof</Feature>
+        <Feature>Wide opening fits ice cubes</Feature>
+        <Feature>Top-Rack dishwasher safe</Feature>
+        <Feature>Fits in most cup holders</Feature>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">1025</Height>
+          <Length Units="hundredths-inches">275</Length>
+          <Width Units="hundredths-inches">363</Width>
+        </ItemDimensions>
+        <Label>Ignite USA</Label>
+        <ListPrice>
+          <Amount>1299</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$12.99</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Ignite USA</Manufacturer>
+        <Model>70615</Model>
+        <MPN>70615</MPN>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">390</Height>
+          <Length Units="hundredths-inches">1380</Length>
+          <Weight Units="hundredths-pounds">35</Weight>
+          <Width Units="hundredths-inches">480</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <PartNumber>70615</PartNumber>
+        <ProductGroup>Kitchen</ProductGroup>
+        <ProductTypeName>KITCHEN</ProductTypeName>
+        <Publisher>Ignite USA</Publisher>
+        <Size>24-Ounce</Size>
+        <Studio>Ignite USA</Studio>
+        <Title>Contigo Cortland Water Bottle, 24-Ounce, Radiant Orchid</Title>
+        <UPC>840276106170</UPC>
+        <UPCList>
+          <UPCListElement>840276106170</UPCListElement>
+          <UPCListElement>798527141008</UPCListElement>
+        </UPCList>
+      </ItemAttributes>
+    </Item>
+  </Items>
+</ItemLookupResponse>

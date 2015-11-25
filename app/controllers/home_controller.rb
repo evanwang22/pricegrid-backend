@@ -12,39 +12,27 @@ class HomeController < ApplicationController
         'ItemId' => product_id,
         'ResponseGroup' => 'ItemAttributes,Images'
       }
-    ).to_h
+    )
+    @search_result = parse(response.body)
 
-    if response_is_error?(response)
-      @search_error = error_keys(response)
+    if @search_result[:error].present?
       render 'search_error' and return
     end
-
-    @search_result = select_keys(response)
-
   end
-
 
   private
 
-  def select_keys(amazon_response)
-    {
-      image_url: amazon_response['ItemLookupResponse']['Items']['Item']['LargeImage']['URL'],
-      name: amazon_response['ItemLookupResponse']['Items']['Item']['ItemAttributes']['Title']
+  def parse(body)
+    doc = Nokogiri::XML(body)
+    nodes = {
+      error: doc.xpath("//xmlns:Errors//xmlns:Message"),
+      name: doc.xpath("//xmlns:ItemAttributes//xmlns:Title"),
+      image_url: doc.xpath("//xmlns:Item/xmlns:LargeImage/xmlns:URL")
     }
-  end
-
-  def error_keys(amazon_response)
-    {
-      message: amazon_response['ItemLookupResponse']['Items']['Request']['Errors']['Error']['Message']
-    }
-  end
-
-  def response_is_error?(amazon_response)
-    if amazon_response['ItemLookupResponse']['Items']['Request']['Errors']
-      return true
-    else
-      return false
+    {}.tap do |search_result|
+      nodes.each do |k, v|
+        search_result[k] = v.text if v.present?
+      end
     end
   end
-
 end

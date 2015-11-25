@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01">
+  <OperationRequest>
+    <HTTPHeaders>
+      <Header Name="UserAgent" Value="Jeff/1.5.0 (Language=Ruby; fsenev)" />
+    </HTTPHeaders>
+    <RequestId>c0921f1b-80fe-4aae-aea9-dee26c2d0056</RequestId>
+    <Arguments>
+      <Argument Name="AWSAccessKeyId" Value="AKIAI25XAZBK65FGHABA" />
+      <Argument Name="AssociateTag" Value="tag" />
+      <Argument Name="ItemId" Value="Boo" />
+      <Argument Name="Operation" Value="ItemLookup" />
+      <Argument Name="ResponseGroup" Value="ItemAttributes,Images" />
+      <Argument Name="Service" Value="AWSECommerceService" />
+      <Argument Name="SignatureMethod" Value="HmacSHA256" />
+      <Argument Name="SignatureVersion" Value="2" />
+      <Argument Name="Timestamp" Value="2015-10-28T03:50:53Z" />
+      <Argument Name="Version" Value="2013-08-01" />
+      <Argument Name="Signature" Value="uzzGJy4hMfUYO0yu1bH5jwFXhQKMrlHWO3xScQJBkNg=" />
+    </Arguments>
+    <RequestProcessingTime>0.0101790000000000</RequestProcessingTime>
+  </OperationRequest>
+  <Items>
+    <Request>
+      <IsValid>True</IsValid>
+      <ItemLookupRequest>
+        <IdType>ASIN</IdType>
+        <ItemId>123ABC456</ItemId>
+        <ResponseGroup>ItemAttributes</ResponseGroup>
+        <ResponseGroup>Images</ResponseGroup>
+        <VariationPage>All</VariationPage>
+      </ItemLookupRequest>
+      <Errors>
+        <Error>
+          <Code>AWS.InvalidParameterValue</Code>
+          <Message>123ABC456 is not a valid value for ItemId. Please change this value and retry your request.</Message>
+        </Error>
+      </Errors>
+    </Request>
+  </Items>
+</ItemLookupResponse>

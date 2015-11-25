@@ -14,37 +14,27 @@ describe HomeController, type: :controller do
   end
 
   describe "GET search" do
-
-    let(:item_data) { {} }
+    let(:vacuum_response) {
+      instance_double(Vacuum::Response)
+    }
 
     let(:vacuum_request) {
-      object_double(Vacuum.new,
-        item_lookup: {
-          "ItemLookupResponse"=> {
-            "Items"=> item_data,
-          }
-        },
+      instance_double(Vacuum::Request,
+        item_lookup: vacuum_response,
         :associate_tag= => 'tag'
       )
     }
 
     before do
       allow(Vacuum).to receive(:new).and_return(vacuum_request)
+      allow(vacuum_response).to receive(:body).and_return(xml_data)
       get :search, search: '123ABC456'
     end
 
     context 'when the product id corresponds to an amazon product' do
-      let(:item_data) { {
-        "Item"=>{
-          "LargeImage"=> {
-            "URL"=>"http://fun.com/funImage"
-          },
-          "ItemAttributes"=> {
-            "Title"=>"Fun stuff"
-          }
-        },
-        "Request"=> {}
-      } }
+      let(:xml_data) {
+        IO.read(Rails.root.join("spec", "fixtures", "amazon_response.xml"))
+      }
 
       it 'searches for a product using the amazon product API' do
         expect(vacuum_request).to have_received(:item_lookup).with(
@@ -57,8 +47,8 @@ describe HomeController, type: :controller do
 
       it 'assigns the amazon product response' do
         expect(assigns(:search_result)).to eq({
-          image_url: "http://fun.com/funImage",
-          name: "Fun stuff"
+          image_url: "http://ecx.images-amazon.com/images/I/31otfvpPU6L.jpg",
+          name: "Contigo Cortland Water Bottle, 24-Ounce, Radiant Orchid"
         })
       end
 
@@ -68,15 +58,9 @@ describe HomeController, type: :controller do
     end
 
     context 'when the product id does not correspond to a real amazon product' do
-      let(:item_data) { {
-        "Request"=>{
-          "Errors"=>{
-            "Error"=> {
-              "Message"=>"123ABC456 is not a valid value for ItemId."
-            }
-          }
-        }
-      } }
+      let(:xml_data) {
+        IO.read(Rails.root.join("spec", "fixtures", "amazon_error.xml"))
+      }
 
       it 'searches for a product using the amazon product API' do
         expect(vacuum_request).to have_received(:item_lookup).with(
@@ -88,9 +72,9 @@ describe HomeController, type: :controller do
       end
 
       it 'assigns the amazon error response' do
-        expect(assigns(:search_error)).to eq({
-          message: "123ABC456 is not a valid value for ItemId.",
-        })
+        expect(assigns(:search_result)[:error]).to include(
+          "123ABC456 is not a valid value for ItemId."
+        )
       end
 
       it 'renders the home#search_error template' do
