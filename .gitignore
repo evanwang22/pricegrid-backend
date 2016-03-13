@@ -21,3 +21,6 @@
 
 # Ignore rbenv local ruby version
 .ruby-version
+
+# Ignore rdocs for offline work
+/doc/*
