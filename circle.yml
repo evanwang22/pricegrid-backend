@@ -4,6 +4,11 @@ general:
     only:
       - master ## only build master branch
 
+## Customize the test machine
+machine:
+  pre:
+    - sudo curl --output /usr/local/bin/phantomjs https://s3.amazonaws.com/circle-downloads/phantomjs-2.1.1
+
 ## Customize database commands
 database:
   override:
