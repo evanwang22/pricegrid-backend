@@ -65,6 +65,23 @@
           <URL>http://www.amazon.com/gp/offer-listing/B00MVODHIK%3FSubscriptionId%3DAKIAI25XAZBK65FGHABA%26tag%3Dtag%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00MVODHIK</URL>
         </ItemLink>
       </ItemLinks>
+      <VariationSummary>
+        <HighestPrice>
+          <Amount>6999</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$69.99</FormattedPrice>
+        </HighestPrice>
+        <HighestSalePrice>
+          <Amount>6656</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$66.56</FormattedPrice>
+        </HighestSalePrice>
+        <LowestPrice>
+          <Amount>2698</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$26.98</FormattedPrice>
+        </LowestPrice>
+      </VariationSummary>
       <SmallImage>
         <URL>http://ecx.images-amazon.com/images/I/31otfvpPU6L._SL75_.jpg</URL>
         <Height Units="pixels">75</Height>

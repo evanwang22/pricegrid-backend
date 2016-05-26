@@ -47,7 +47,7 @@ describe HomeController, type: :controller do
 
       it 'assigns the amazon product response' do
         expect(assigns(:search_result)).to eq({
-          image_url: "http://ecx.images-amazon.com/images/I/31otfvpPU6L.jpg",
+          imageUrl: "http://ecx.images-amazon.com/images/I/31otfvpPU6L.jpg",
           name: "Contigo Cortland Water Bottle, 24-Ounce, Radiant Orchid"
         })
       end
@@ -81,6 +81,5 @@ describe HomeController, type: :controller do
         expect(response).to render_template("search_error")
       end
     end
-
   end
 end

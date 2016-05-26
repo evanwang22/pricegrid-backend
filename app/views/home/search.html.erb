@@ -1,13 +1,5 @@
 <h1>Pricegrid</h1>
 <p>See color and size combinations for Amazon products</p>
 
-<%= form_tag '/search', :method => 'get' do %>
-  <%= text_field_tag :search %>
-  <%= submit_tag "Search" %>
-<% end %>
-
 <br>
-
-Results for <%= @search_result[:name] %>
-
-<img class='search-result' src=<%= @search_result[:image_url] %> alt="Amazon image"/>
+<%= react_component('SearchBox', data: @search_result) %>

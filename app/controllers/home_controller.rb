@@ -27,7 +27,7 @@ class HomeController < ApplicationController
     nodes = {
       error: doc.xpath("//xmlns:Errors//xmlns:Message"),
       name: doc.xpath("//xmlns:ItemAttributes//xmlns:Title"),
-      image_url: doc.xpath("//xmlns:Item/xmlns:LargeImage/xmlns:URL")
+      imageUrl: doc.xpath("//xmlns:Item/xmlns:LargeImage/xmlns:URL")
     }
     {}.tap do |search_result|
       nodes.each do |k, v|
